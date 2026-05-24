@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prenotazione confermata — Metodo369</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 40'><rect width='220' height='40' rx='6' fill='%230A66C2'/><text x='110' y='28' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='22' fill='white' letter-spacing='1'>METODO369</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --li-blue: #0A66C2; --li-bright: #378FE9; --li-pale: #cce4f7;
+  --dark: #050E1A; --dark-2: #091627; --dark-3: #0D1F35; --dark-4: #112844;
+  --text-hi: #EEF4FB; --text-mid: #93AECB; --text-dim: #4E6B87;
+  --border: rgba(10,102,194,0.22); --border-hi: rgba(55,143,233,0.4);
+  --r: 6px; --r-lg: 14px;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Sora', sans-serif;
+  background: var(--dark); color: var(--text-hi);
+  line-height: 1.6; min-height: 100vh;
+  display: flex; flex-direction: column;
+}
+
+nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.1rem 5rem;
+  background: rgba(5,14,26,0.92); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-logo { font-weight: 700; font-size: 1.25rem; text-decoration: none; color: var(--text-hi); }
+.nav-logo span { color: var(--li-bright); }
+
+main {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  padding: 4rem 2rem;
+  background:
+    radial-gradient(ellipse 55% 50% at 60% 40%, rgba(10,102,194,0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 50% at 20% 70%, rgba(55,143,233,0.06) 0%, transparent 60%);
+}
+
+.card {
+  max-width: 600px; width: 100%;
+  background: var(--dark-3); border: 1px solid var(--border-hi);
+  border-radius: var(--r-lg); padding: 3.5rem 3rem;
+  text-align: center;
+  animation: fadeUp 0.5s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.check-circle {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: rgba(10,102,194,0.15); border: 2px solid var(--li-blue);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 2rem; font-size: 2rem;
+  animation: popIn 0.4s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+@keyframes popIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.tag {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: rgba(10,102,194,0.15); border: 1px solid var(--border-hi);
+  color: var(--li-pale); font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 0.3rem 0.8rem; border-radius: 99px; margin-bottom: 1.25rem;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  line-height: 1.15; margin-bottom: 1rem;
+}
+h1 em { font-style: italic; color: var(--li-bright); }
+
+.subtitle {
+  color: var(--text-mid); font-size: 1rem;
+  line-height: 1.75; margin-bottom: 2rem;
+}
+
+.steps-mini {
+  background: var(--dark-2); border: 1px solid var(--border);
+  border-radius: var(--r-lg); padding: 1.5rem;
+  margin-bottom: 2rem; text-align: left;
+}
+.steps-mini-title {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--li-bright); margin-bottom: 1rem;
+}
+.step-mini {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  margin-bottom: 0.85rem;
+}
+.step-mini:last-child { margin-bottom: 0; }
+.step-mini-dot {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: rgba(10,102,194,0.2); border: 1px solid var(--border-hi);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem; font-weight: 700; color: var(--li-bright);
+  flex-shrink: 0; margin-top: 1px;
+}
+.step-mini p { font-size: 0.875rem; color: var(--text-mid); line-height: 1.55; }
+.step-mini strong { color: var(--text-hi); }
+
+.btn-home {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--li-blue); color: #fff;
+  font-weight: 600; font-size: 0.975rem;
+  padding: 0.85rem 2rem; border-radius: var(--r);
+  text-decoration: none; transition: background 0.2s, transform 0.15s;
+}
+.btn-home:hover { background: var(--li-bright); transform: translateY(-2px); }
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 5rem;
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--dark);
+}
+.foot-logo { font-weight: 700; font-size: 1rem; }
+.foot-logo span { color: var(--li-bright); }
+footer p { font-size: 0.78rem; color: var(--text-dim); }
+
+@media(max-width: 600px) {
+  nav, footer { padding: 1rem 1.5rem; }
+  .card { padding: 2.5rem 1.5rem; }
+  footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Metodo<span>369</span></a>
+</nav>
+
+<main>
+  <div class="card">
+    <div class="check-circle" aria-hidden="true">✅</div>
+    <div class="tag">Prenotazione confermata</div>
+    <h1>Ci siamo.<br>La call è <em>prenotata.</em></h1>
+    <p class="subtitle">
+      Riceverai una email di conferma con tutti i dettagli.<br>
+      Controlla anche la cartella spam se non la trovi.
+    </p>
+
+    <div class="steps-mini">
+      <div class="steps-mini-title">Cosa succede adesso</div>
+      <div class="step-mini">
+        <div class="step-mini-dot">1</div>
+        <p><strong>Email di conferma</strong> — Calendly ti ha inviato un riepilogo con link per modificare o cancellare se necessario.</p>
+      </div>
+      <div class="step-mini">
+        <div class="step-mini-dot">2</div>
+        <p><strong>15 minuti insieme</strong> — Analizziamo la tua visibilità su LinkedIn e capiamo perché non ricevi risposte.</p>
+      </div>
+      <div class="step-mini">
+        <div class="step-mini-dot">3</div>
+        <p><strong>Piano d'azione</strong> — Se posso aiutarti, ti propongo un percorso concreto. Nessuna pressione.</p>
+      </div>
+    </div>
+
+    <a href="index.html" class="btn-home">← Torna al sito</a>
+  </div>
+</main>
+
+<footer>
+  <span class="foot-logo">Metodo<span>369</span></span>
+  <p>© 2026 Metodo369 · Tutti i diritti riservati</p>
+</footer>
+
+</body>
+</html>
